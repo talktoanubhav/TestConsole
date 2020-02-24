@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building 1..'
+                echo 'Building 2..'
 				sh "cd base-console-app \
 				dotnet build ConsoleGraphTest.csproj"
             }
