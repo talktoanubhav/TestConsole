@@ -17,6 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying.....'
+                echo "$USER"
 		sh "USER jenkins"
 		sh "usermod -aG docker jenkins"
 		sh "docker version"
