@@ -17,7 +17,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying.....'
-		sh "docker version"
+		sh "sudo apt-get update"
+		sh "sudo apt-get install docker-ce docker-ce-cli containerd.io"
             }
         }
     }
